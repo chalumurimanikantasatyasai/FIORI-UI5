@@ -3,16 +3,28 @@
     xmlns="sap.m">
     <Page id="page" title="{i18n>title}">
         <VBox>
-          <Label text="Student ID"/>
-          <Input id="stdId" value="{stdModel>/studentid}" width="10%"/>
-          <Label text="Name"/>
-          <Input id="stdName" value="{stdModel>/name}" width="10%"/>
-          <Label text="Class"/>
-          <Input id="stdcla" value="{stdModel>/class}" width="10%"/>
-          <Label text="Section"/>
-          <Input id="stdSec" value="{stdModel>/section}" width="10%"/>
-          <Button text="{i18n>Getdet}" id="idBtnGD" press="onGetDetails" icon="sap-icon://approvals"/>
-         </VBox>
+            <HBox alignItems="Center">
+                <Label text="Student ID" width="100px"/>
+                <Input id="stdId" value="{stdModel>/studentid}" width="200px"/>
+            </HBox>
+            <HBox alignItems="Center">
+                <Label text="Name" width="100px"/>
+                <Input id="stdName" value="{stdModel>/name}" width="200px"/>
+            </HBox>
+            <HBox alignItems="Center">
+                <Label text="Class" width="100px"/>
+                <Input id="stdcla" value="{stdModel>/class}" width="200px"/>
+            </HBox>
+            <HBox alignItems="Center">
+                <Label text="Section" width="100px"/>
+                <Input id="stdSec" value="{stdModel>/section}" width="200px"/>
+            </HBox>
+            <HBox>
+                <Label width="80px"/>
+                <Button text="{i18n>Getdet}" id="idBtnGD" press="onGetDetails" icon="sap-icon://approvals"/>
+            </HBox>
+        </VBox>
+
 
     </Page>
 </mvc:View>
